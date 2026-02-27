@@ -101,84 +101,67 @@ now:
 
 ### Calendars
 
-  Option     Type     Default        Description
-  ---------- -------- -------------- -------------------------------
-  entity     string   required       Calendar entity ID
-  icon       string   mdi:calendar   Icon displayed in selector
-  color      string   required       Dot and event indicator color
-  priority   number   999            Defines dot display order
-
+| Option           | Type    | Default      | Description                  |
+|------------------|---------|--------------|------------------------------|
+| `entity`         | string  | required     | Target Calendar entity ID    |
+| `icon`           | string  | mdi:calendar | Icon displayed in selector   |
+| `color`          | string  | required     | Dot and event indicator color|
+| `priority`       | number  | 999          | Defines dot display order    |
 ------------------------------------------------------------------------
 
 ### Backgrounds
 
-  Option     Type     Default       Description
-  ---------- -------- ------------- ------------------------------------
-  card       string   null          Entire card background
-  selector   string   transparent   Calendar selector panel background
-  month      string   transparent   Month grid section background
-  events     string   transparent   Event list panel background
-
+| Option     | Type   | Default        | Description                        |
+|------------|--------|---------------|------------------------------------|
+| `card`     | string | `null`        | Entire card background             |
+| `selector` | string | `transparent` | Calendar selector panel background |
+| `month`    | string | `transparent` | Month grid section background      |
+| `events`   | string | `transparent` | Event list panel background        |
 ------------------------------------------------------------------------
 
 ### Events
 
-  ------------------------------------------------------------------------
-  Option                   Type      Default          Description
-  ------------------------ --------- ---------------- --------------------
-  max_items                number \| null             Maximum number of
-                           null                       events displayed
-
-  show_more                boolean   true             Show "+N more"
-                                                      indicator
-
-  show_count               boolean   true             Display total event
-                                                      count
-
-  gap_reduction            number    16               Reduces spacing
-                                                      between time and
-                                                      title
-  ------------------------------------------------------------------------
-
+| Option          | Type             | Default | Description                                  |
+|-----------------|------------------|---------|----------------------------------------------|
+| `max_items`     | number \| null   | `null`  | Maximum number of events displayed           |
+| `show_more`     | boolean          | `true`  | Show "+N more" indicator                     |
+| `show_count`    | boolean          | `true`  | Display total event count                    |
+| `gap_reduction` | number           | `16`    | Reduces spacing between time and title       |
 ------------------------------------------------------------------------
 
 ### Day Tiles
 
-  Option       Type      Default   Description
-  ------------ --------- --------- -------------------------------------
-  background   boolean   true      Enable subtle tile background
-  today_only   boolean   false     Apply tile background only to today
-
+| Option        | Type    | Default | Description                                   |
+|---------------|---------|---------|-----------------------------------------------|
+| `background`  | boolean | `true`  | Enable subtle tile background                 |
+| `today_only`  | boolean | `false` | Apply tile background only to today           |
 ------------------------------------------------------------------------
 
 ### Ongoing Event (Optional)
 
-  -------------------------------------------------------------------------
-  Option                     Type      Default         Description
-  -------------------------- --------- --------------- --------------------
-  enabled                    boolean   false           Enable live ongoing
-                                                       detection
+| Option            | Type    | Default      | Description                                     |
+|-------------------|---------|-------------|--------------------------------------------------|
+| `enabled`         | boolean | `false`     | Enable live ongoing detection                    |
+| `update_seconds`  | number  | `30`        | Refresh interval (seconds)                       |
+| `show_progress`   | boolean | `true`      | Show visual progress overlay                     |
+| `show_text`       | boolean | `true`      | Display elapsed/remaining time                   |
+| `text_mode`       | string  | `remaining` | `remaining`, `elapsed`, `both`                   |
+-------------------------------------------------------------------------
 
-  update_seconds             number    30              Refresh interval
-                                                       (seconds)
+-------------------------------------------------------------------------
+## 🌍 Language Support
 
-  show_progress              boolean   true            Show visual progress
-                                                       overlay
+The card is currently optimized for Czech (cs-CZ) language environments.
 
-  show_text                  boolean   true            Display
-                                                       elapsed/remaining
-                                                       time
+Internationalization support may be added in future iterations.
 
-  text_mode                  string    remaining       `remaining`,
-                                                       `elapsed`, `both`
-  -------------------------------------------------------------------------
-
+-------------------------------------------------------------------------
 
 ## ⚠️ Project Scope
 
 This card is primarily developed for personal dashboard use.
 
-Feature requests may not always be implemented.\
+Feature requests may not always be implemented.
 The component evolves based on practical usage.
 
 Pull requests are welcome.
