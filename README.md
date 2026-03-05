@@ -38,7 +38,7 @@ planner-style complexity.
 ## Preview
 
 <p align="center">
-  <img src="images/example.png" width="650">
+  <img src="example.png" width="650">
 </p>
 
 ------------------------------------------------------------------------
