@@ -35,6 +35,14 @@ planner-style complexity.
 
 ------------------------------------------------------------------------
 
+## Preview
+
+<p align="center">
+  <img src="images/example.png" width="650">
+</p>
+
+------------------------------------------------------------------------
+
 ## 🎯 Designed For
 
 -   Structured grid dashboards
